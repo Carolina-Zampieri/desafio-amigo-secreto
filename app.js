@@ -39,3 +39,11 @@ function listaNomes() {
         lista.innerHTML += `<li>${amigos[i]}</li>`;
     }
 }
+
+function sortearAmigo() {
+    let sortear = Math.floor(Math.random() * amigos.length);
+    let nomeSorteado = amigos[sortear]; //add essa linha para mostrar o nome não o número do índice
+
+    let resultado = document.getElementById('resultado');
+    resultado.innerHTML = `${nomeSorteado}`;
+}
